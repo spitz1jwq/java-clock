@@ -3,6 +3,9 @@ public class Clock {
 	private Display minute= new Display(60);
 
 	public void start(){
+		/**
+		 * while(ture)不知道为什么会提示错误。 for(int i=0;i==0;)构成了一个死循环，
+		 */
 		for(int i=0;i==0;){
 		minute.increase();
 		if(minute.getValue()== 0)
